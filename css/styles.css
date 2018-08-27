@@ -69,3 +69,34 @@ main > .tagline {
 	width: 2.65rem;
 	height: 2.65rem;
 }
+.btn-group button {
+    background-color: #FAFAFA; /* Blue background */
+    border: #FAFAFA; /* Green border */
+    color: #0277BD; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+	float: right; /* Float the buttons side by side */
+	font-family: 'Indie Flower', cursive;
+	font-size: x-large;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+	background-color: #0277BD;
+	color: #FAFAFA;
+}
+
+body{
+  background: #FAFAFA;
+}
