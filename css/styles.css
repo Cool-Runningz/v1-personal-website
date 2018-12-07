@@ -72,7 +72,7 @@ main > .tagline {
 .btn-group button {
     background-color: #FAFAFA; /* Blue background */
     border: #FAFAFA; /* Green border */
-    color: #0277BD; /* White text */
+    color: #00829a; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
 	float: right; /* Float the buttons side by side */
@@ -93,7 +93,7 @@ main > .tagline {
 
 /* Add a background color on hover */
 .btn-group button:hover {
-	background-color: #0277BD;
+	background-color: #00829a;
 	color: #FAFAFA;
 }
 
