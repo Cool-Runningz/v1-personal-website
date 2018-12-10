@@ -1,7 +1,18 @@
 /* Typography */
 
-html {
+html, body {
 	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
+	background: #FAFAFA;
+	color: #00829a;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+/* Add a top margin to avoid content overlay from fixed menu */
+body section {
+	margin-top: 50px;
 }
 
 @media (min-width: 576px) {
@@ -32,7 +43,6 @@ html {
 	font-size: 3em;
 }
 
-/* Custom Styles */
 
 main {
 	display: flex;
@@ -43,7 +53,7 @@ main {
 	text-align: center;
 }
 
-main > .intro {
+main > .intro, .section-header{
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 3.75em;
 	font-weight: 600;
@@ -53,6 +63,14 @@ main > .tagline {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
 	font-weight: 100;
+}
+
+.logo {
+	width: 10%;
+}
+
+.icons-desc i {
+	margin-left: 15px
 }
 
 .icons-social i {
@@ -69,34 +87,90 @@ main > .tagline {
 	width: 2.65rem;
 	height: 2.65rem;
 }
-.btn-group button {
-    background-color: #FAFAFA; /* Blue background */
-    border: #FAFAFA; /* Green border */
-    color: #00829a; /* White text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-	float: right; /* Float the buttons side by side */
-	font-family: 'Indie Flower', cursive;
-	font-size: x-large;
-}
 
-.btn-group button:not(:last-child) {
-    border-right: none; /* Prevent double borders */
-}
-
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* Add a background color on hover */
-.btn-group button:hover {
+/* Add a background color to the top navigation */
+.top-nav {
 	background-color: #00829a;
-	color: #FAFAFA;
+	overflow: hidden;
+	cursor: pointer; /* Pointer/hand icon */
+	/*TODO: Pick out a different font for navigation that pairs nicely with Roboto*/
+	/*font-family: 'Indie Flower', cursive;*/
+
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
 }
 
-body{
-  background: #FAFAFA;
+/* Style the links inside the navigation bar */
+.top-nav a {
+	float: left;
+	color: #FAFAFA;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.top-nav a:hover {
+	background-color: #FAFAFA;
+	color: #00829a;
+}
+
+/* Add a color to the active/current link */
+.top-nav a.active {
+	background-color: #FAFAFA;
+	color: #00829a;
+}
+
+section {
+	min-height: 100vh;
+	padding-top: 50px;
+}
+
+img.rounded {
+	border-radius: 50%;
+	width: 300px;
+}
+
+
+/*TESTING*/
+/* Style buttons */
+.icon-btn {
+	background-color: #FAFAFA;
+	border: none; /* Remove borders */
+	color: #00829a;
+	font-size: 16px; /* Set a font size */
+	cursor: pointer; /* Mouse pointer on hover */
+}
+
+.flex-container {
+	display: flex;
+}
+
+.flex-container-center {
+	display: flex;
+	justify-content: center;
+}
+
+figure {
+	width: 100%;
+}
+
+#topBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+}
+
+.font-small {
+	font-size: 10px;
 }
