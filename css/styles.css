@@ -1,6 +1,6 @@
 /* Typography */
 
-html, body {
+html {
 	font-family: 'Roboto', sans-serif;
 	scroll-behavior: smooth;
 	background: #FAFAFA;
@@ -43,6 +43,7 @@ body section {
 	font-size: 3em;
 }
 
+/* Custom Styles */
 
 main {
 	display: flex;
@@ -53,7 +54,7 @@ main {
 	text-align: center;
 }
 
-main > .intro, .section-header{
+main > .intro, header{
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 3.75em;
 	font-weight: 600;
@@ -130,11 +131,18 @@ section {
 
 img.rounded {
 	border-radius: 50%;
-	width: 300px;
+	width: 250px;
+}
+
+.bio {
+	padding: 25px;
+}
+
+header {
+	margin-left: 30px;
 }
 
 
-/*TESTING*/
 /* Style buttons */
 .icon-btn {
 	background-color: #FAFAFA;
@@ -144,7 +152,7 @@ img.rounded {
 	cursor: pointer; /* Mouse pointer on hover */
 }
 
-.flex-container {
+.about-container {
 	display: flex;
 }
 
@@ -173,4 +181,27 @@ figure {
 
 .font-small {
 	font-size: 10px;
+}
+
+
+/*****MEDIA QUERIES******/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.about-container {
+		font-size: 16px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	header {
+		text-align: center;
+	}
+
+	figure {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: auto;
+	}
+
 }
