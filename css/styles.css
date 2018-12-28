@@ -15,30 +15,6 @@ body section {
 	margin-top: 50px;
 }
 
-@media (min-width: 576px) {
-	html {
-		font-size: 14px;
-	}
-}
-
-@media (min-width: 768px) {
-	html {
-		font-size: 16px;
-	}
-}
-
-@media (min-width: 992px) {
-	html {
-		font-size: 18px;
-	}
-}
-
-@media (min-width: 1200px) {
-	html {
-		font-size: 20px;
-	}
-}
-
 .icons-social i {
 	font-size: 3em;
 }
@@ -140,6 +116,7 @@ img.rounded {
 
 header {
 	margin-left: 30px;
+	margin-bottom: 25px;
 }
 
 
@@ -158,7 +135,7 @@ header {
 
 .flex-container-center {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 figure {
@@ -185,6 +162,30 @@ figure {
 
 
 /*****MEDIA QUERIES******/
+@media (min-width: 576px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 	.about-container {
@@ -203,5 +204,71 @@ figure {
 		justify-content: center;
 		width: auto;
 	}
+}
 
+
+/**********Flip Card*******/
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	border: 1px solid #FAFAFA;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+	background-color: #00829a;
+	color: #FAFAFA;
+}
+
+.flip-card-front img {
+	width:300px;
+	height:300px;
+}
+
+/* Style the back side */
+.flip-card-back {
+	background-color: #00829a;
+	color: #FAFAFA;
+	transform: rotateY(180deg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 2.0;
+}
+
+.flip-card-back a {
+	color: #FAFAFA;
+	text-decoration: none;
+}
+
+.flip-card-back a:hover {
+	text-decoration: underline;
 }
