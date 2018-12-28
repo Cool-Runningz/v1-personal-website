@@ -22,7 +22,6 @@
 	<script src="scripts/smoothScroll.js"></script>
 </head>
 <body>
-<!-- TODO: Make navbar fixed-->
 <nav class="top-nav">
 	<a href="#about">About Me</a>
 	<a href="#portfolio">Portfolio</a>
@@ -58,7 +57,53 @@
 	<section id="portfolio">
 		<header class="section-header">Portfolio</header>
 		<div class="flex-container-center">
-			<p>Add portfolio items here</p>
+
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="media/designlab.png" alt="Designlab">
+					</div>
+					<div class="flip-card-back">
+						<h1><b>Design 101 Course</b></h1>
+						<h4>Designlab</h4>
+						<a href="https://trydesignlab.com/certificates/design-101-v1/alyssa_holland/"
+						   target="_blank">
+							<h5>View projects</h5>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="media/bg-headshot.png" alt="Brianna-Grace-Soprano">
+					</div>
+					<div class="flip-card-back">
+						<h3><b>Brianna Grace Soprano</b></h3>
+						<a href="http://www.briannagracesoprano.com/"
+						   target="_blank">
+							<h5>Music Portfolio Website</h5>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="media/jest-enzyme.png" alt="Testing-jest-enzyme">
+					</div>
+					<div class="flip-card-back">
+						<h3><b>Testing w/ Jest & Enzyme</b></h3>
+						<a href="https://gist.github.com/Cool-Runningz/9be6f716c7e982e065f966ec6257e532"
+						   target="_blank">
+							<h5>Github Gist</h5>
+						</a>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</section>
 <button onclick="scrollToTop()"  title="Scroll to top" class="icon-btn" id="topBtn">
