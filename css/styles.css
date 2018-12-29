@@ -116,7 +116,6 @@ img.rounded {
 
 header {
 	margin-left: 30px;
-	margin-bottom: 25px;
 }
 
 
@@ -136,6 +135,7 @@ header {
 .flex-container-center {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 figure {
@@ -203,6 +203,11 @@ figure {
 		align-items: center;
 		justify-content: center;
 		width: auto;
+	}
+
+	.flex-container-center {
+		display: flex;
+		flex-direction: column;
 	}
 }
 
@@ -278,18 +283,13 @@ figure {
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 	max-width: 300px;
-	margin: auto;
+	margin: 25px auto;
 	text-align: center;
 }
 
 .card img {
 	width:300px;
 	height:300px;
-}
-
-.title {
-	color: grey;
-	font-size: 18px;
 }
 
 .card-button {
