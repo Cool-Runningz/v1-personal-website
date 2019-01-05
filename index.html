@@ -28,19 +28,19 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 	<link rel="manifest" href="site.webmanifest">
 
-
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="scripts/smoothScroll.js"></script>
+	<script src="scripts/typewriter.js"></script>
 </head>
-<body>
+<body onload="typeWriter()">
 <nav class="top-nav">
 	<a href="#home">Home</a>
 	<a href="#about">About</a>
 	<a href="#portfolio">Portfolio</a>
 </nav>
 <main id="home">
-	<div class="intro">Hey, I'm Alyssa
+	<div class="intro">
+		<span id="hello"></span>
 	 	<img src="media/alyssa.svg" alt="icon-me" class="logo">
 	</div>
 	<div class="tagline icons-desc">
