@@ -1,278 +1,277 @@
 /* Typography */
 
 html {
-	font-family: 'Roboto', sans-serif;
-	scroll-behavior: smooth;
-	background: #FAFAFA;
-	color: #00829a;
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  background: #fafafa;
+  color: #00829a;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }
 
 /* Add a top margin to avoid content overlay from fixed menu */
 body section {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 
 .icons-social i {
-	font-size: 3em;
+  font-size: 3em;
 }
 
 /* Custom Styles */
 
 main {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	justify-content: center;
-	padding: 0 30px;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  padding: 0 30px;
+  text-align: center;
 }
 
-main > .intro, header{
-	font-family: 'Reem Kufi', sans-serif;
-	font-size: 3.75em;
-	font-weight: 600;
+main > .intro,
+header {
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 3.75em;
+  font-weight: 600;
 }
 
 main > .tagline {
-	font-size: 1.5rem;
-	margin: 1.5rem 0;
-	font-weight: 100;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  font-weight: 100;
 }
 
 .logo {
-	width: 10%;
+  width: 10%;
 }
 
 .icons-desc i {
-	margin-left: 15px
+  margin-left: 15px;
 }
 
 .icons-social i {
-	padding: 10px;
+  padding: 10px;
 }
 
 .devto {
-	margin-bottom: -0.20rem;
+  margin-bottom: -0.2rem;
 }
 
 .devto svg {
-	margin-bottom: -0.20rem;
-	margin-left: 0.675rem;;
-	width: 2.65rem;
-	height: 2.65rem;
+  margin-bottom: -0.2rem;
+  margin-left: 0.675rem;
+  width: 2.65rem;
+  height: 2.65rem;
 }
 
 /* Add a background color to the top navigation */
 .top-nav {
-	background-color: #00829a;
-	overflow: hidden;
-	cursor: pointer; /* Pointer/hand icon */
-	/*TODO: Pick out a different font for navigation that pairs nicely with Roboto*/
-	/*font-family: 'Indie Flower', cursive;*/
+  background-color: #00829a;
+  overflow: hidden;
+  cursor: pointer; /* Pointer/hand icon */
+  /*TODO: Pick out a different font for navigation that pairs nicely with Roboto*/
+  /*font-family: 'Indie Flower', cursive;*/
 
-	position: fixed; /* Set the navbar to fixed position */
-	z-index: 1;
-	top: 0; /* Position the navbar at the top of the page */
-	width: 100%; /* Full width */
+  position: fixed; /* Set the navbar to fixed position */
+  z-index: 1;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 /* Style the links inside the navigation bar */
 .top-nav a {
-	float: left;
-	color: #FAFAFA;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
+  float: left;
+  color: #fafafa;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 /* Change the color of links on hover */
 .top-nav a:hover {
-	background-color: #FAFAFA;
-	color: #00829a;
+  background-color: #fafafa;
+  color: #00829a;
 }
 
 /* Add a color to the active/current link */
 .top-nav a.active {
-	background-color: #FAFAFA;
-	color: #00829a;
+  background-color: #fafafa;
+  color: #00829a;
 }
 
 section {
-	min-height: 100vh;
-	padding-top: 50px;
+  min-height: 100vh;
+  padding-top: 50px;
 }
 
 img.rounded {
-	border-radius: 50%;
-	width: 250px;
+  border-radius: 5%;
+  width: 250px;
 }
 
 .bio {
-	padding: 25px 50px;
-	line-height: 1.5;
+  padding: 25px 50px;
+  line-height: 1.5;
 }
 
 header {
-	margin-left: 30px;
+  margin-left: 30px;
 }
 
-
 .about-container {
-	display: flex;
+  display: flex;
 }
 
 .flex-container-center {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 figure {
-	width: 100%;
+  width: 100%;
 }
-
 
 /****************Media Queries**********************/
 @media (min-width: 576px) {
-	html {
-		font-size: 14px;
-	}
+  html {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 768px) {
-	html {
-		font-size: 16px;
-	}
+  html {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 992px) {
-	html {
-		font-size: 18px;
-	}
+  html {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1200px) {
-	html {
-		font-size: 20px;
-	}
+  html {
+    font-size: 20px;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-	.about-container {
-		font-size: 16px;
-		display: flex;
-		flex-direction: column;
-	}
+  .about-container {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+  }
 
-	header {
-		text-align: center;
-	}
+  header {
+    text-align: center;
+  }
 
-	figure {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: auto;
-	}
+  figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
 
-	.flex-container-center {
-		display: flex;
-		flex-direction: column;
-	}
+  .flex-container-center {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /****************Profile Card**********************/
 .card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-	max-width: 300px;
-	margin: 25px auto;
-	text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  margin: 25px auto;
+  text-align: center;
 }
 
 .card img {
-	width:300px;
-	height:300px;
+  width: 300px;
+  height: 300px;
 }
 
 .card-button {
-	border: none;
-	outline: 0;
-	display: inline-block;
-	padding: 8px;
-	color: #FAFAFA;
-	background-color: #00829a;
-	text-align: center;
-	cursor: pointer;
-	width: 100%;
-	font-size: 18px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #fafafa;
+  background-color: #00829a;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
 
 .card-button:hover {
-	opacity: 0.7;
+  opacity: 0.7;
 }
 
 .card-title {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .card-desc {
-	margin-bottom: 10px;
-	color: darkslategray;
-	font-size: 16px;
-	padding: 0 0.25rem;
+  margin-bottom: 10px;
+  color: darkslategray;
+  font-size: 16px;
+  padding: 0 0.25rem;
 }
 
 /******* Tooltip ********/
 
 /* Tooltip container */
 .tooltip {
-	position: relative;
-	display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-	visibility: hidden;
-	width: 80px;
-	background-color: #555;
-	color: #FAFAFA;
-	text-align: center;
-	border-radius: 5px;
-	padding: 5px 0;
-	font-size: 16px;
+  visibility: hidden;
+  width: 80px;
+  background-color: #555;
+  color: #fafafa;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  font-size: 16px;
 
-	/* Position the tooltip text */
-	position: absolute;
-	z-index: 1;
-	top: 100%;
-	left: 50%;
-	margin-left: -40px;
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -40px;
 
-	/* Fade in tooltip */
-	opacity: 0;
-	transition: opacity 0.75s;
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.75s;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
-	visibility: visible;
-	opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .tooltip .tooltiptext::after {
-	content: "";
-	position: absolute;
-	bottom: 100%;  /* At the top of the tooltip */
-	left: 50%;
-	margin-left: -5px;
-	border-width: 5px;
-	border-style: solid;
-	border-color: transparent transparent #555 transparent;
+  content: "";
+  position: absolute;
+  bottom: 100%; /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
 }
