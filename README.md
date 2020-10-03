@@ -1,5 +1,5 @@
-## Welcome to my Personal Website!
+## Version 1 of my Personal Website!
 
-This repo is my personal website hosted on GitHub Pages.
+This repo is version 1 of personal website hosted on GitHub Pages.
 
-You can access my website at [alyssaholland.me](http://alyssaholland.me/)
+You can access this past version of my website [here](https://cool-runningz.github.io/v1-personal-website/)
